@@ -1,7 +1,5 @@
 # movie genres
 
-#movie_genres = {'Horror':0, 'Romance':0, 'Comedy':0, 'History':0 , 'Adventure':0 , 'Action':0}
-
 def INPUT(n):
     movie_genres = {'Horror': 0, 'Romance': 0, 'Comedy': 0, 'History': 0, 'Adventure': 0, 'Action': 0}
     for i in range(0,n):
@@ -13,6 +11,7 @@ def INPUT(n):
         if choice3 in movie_genres.keys():
             movie_genres[f'{choice3}'] += 1
     return movie_genres
+
 repetition = int(input())
 A = INPUT(repetition)
 A = dict(sorted(A.items(),key=lambda item : (-item[1],item[0])))
