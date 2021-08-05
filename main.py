@@ -1,5 +1,4 @@
 # movie genres
-
 def INPUT(n):
     movie_genres = {'Horror': 0, 'Romance': 0, 'Comedy': 0, 'History': 0, 'Adventure': 0, 'Action': 0}
     for i in range(0,n):
@@ -17,8 +16,4 @@ A = INPUT(repetition)
 A = dict(sorted(A.items(),key=lambda item : (-item[1],item[0])))
 
 for k , v in A.items():
-    print(f'{k}:{v}', end='\n')
-
-
-
-
+    print(f'{k} : {v}', end='\n')
